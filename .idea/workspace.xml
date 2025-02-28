@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16373539-a0af-468d-883a-d9ad00fd1950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BANK__MANAGEMENT_SYSTEM MVC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Current_Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Loan_Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Savings_Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Transaction.java" afterDir="false" />
+    <list default="true" id="16373539-a0af-468d-883a-d9ad00fd1950" name="Changes" comment="ok">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +32,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Abishek00ujj&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Abishek00ujj/Bank-Management--DAO-MVC&quot;,
+    &quot;accountId&quot;: &quot;eb3ce863-c005-44bf-9c56-3ba3200085a7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2tdBE7GpJMMHgjX4U5014wnI6BD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Model" />
@@ -75,6 +77,19 @@
       <option name="presentableId" value="Default" />
       <updated>1740671957326</updated>
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <option name="closed" value="true" />
+      <created>1740676848685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740676848685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
 </project>

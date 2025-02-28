@@ -3,8 +3,11 @@ package Model;
 public class Transaction
 {
     public String Money_from;
+
     public String Money_to;
+
     public String time;
+
     public String date;
 
     public String amount;
