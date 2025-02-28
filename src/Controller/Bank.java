@@ -24,7 +24,6 @@ public class Bank
     {
         return branches;
     }
-
     public long view_funds()
     {
         return fund;

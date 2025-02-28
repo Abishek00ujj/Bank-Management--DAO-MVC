@@ -21,13 +21,6 @@ public class Main
         Branch branchView=new Branch();
         View.Bank bankview=new View.Bank();
 
-//        Address bankAddress = new Address("CBE", "10/234", "COIMBATORE", "TAMIL NADU");
-//        Model.Employee manager = new Model.Employee("1234", "1", "ABISHEK", "1234", "MANAGER", bankAddress, "9092884088");
-//
-//// Create a sample branch
-//        bank.create_branch("1234", "CBE", bankAddress, "144402039", manager);
-
-
         while(true)
         {
             System.out.println("WELCOME TO BANK MANAGEMENT SYSTEM");
