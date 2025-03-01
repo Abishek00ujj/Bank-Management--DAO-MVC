@@ -88,6 +88,7 @@ public class Bank
                 System.out.println("-------------------------------MANAGE BRANCH-------------------------------------");
                 System.out.println();
                 LinkedHashMap<String,Model.Branch> branches=bank.view_all_branches();
+                System.out.println("      IFCE             BRANCH NAME              MANAGER NAME");
                 for(Map.Entry<String,Branch> e:branches.entrySet())
                 {
                     System.out.println(e.getKey()+"   "+e.getValue().branch_name+"    "+e.getValue().branch_manager.emp_name);
@@ -163,14 +164,16 @@ public class Bank
                 System.out.println();
                 System.out.println("Enter the IFCE:");
                 String ifce=sc.nextLine();
-                if(bank.is_branch_available(ifce)) {
+                if(bank.is_branch_available(ifce))
+                {
                     Branch branch_data = bank.get_branch(ifce);
                     String fund = sc.nextLine();
                     System.out.println("Are you sure want to make transfer fund to the " + branch_data.branch_name + " " + branch_data.ifce);
                     System.out.println("Type confirm. and press enter.");
 
                     String confirm = sc.nextLine();
-                    if (confirm.toLowerCase().equals("confirm")) {
+                    if (confirm.toLowerCase().equals("confirm"))
+                    {
                         bank.update_branch_manager(ifce, new Branch(ifce, branch_data.branch_name, branch_data.address, branch_data.contact, branch_data.branch_manager, Long.parseLong(fund)));
                         System.out.println("fund is transfered succuessfully!");
                     }

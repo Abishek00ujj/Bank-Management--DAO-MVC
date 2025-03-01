@@ -21,6 +21,16 @@ public class Branch
     }
 
 
-
-
+    public Employee employee_login(String emp_id,String emp_password)
+    {
+        if(employees.containsKey(emp_id))
+        {
+            Employee emp=employees.get(emp_id);
+            if(emp.emp_id.equals(emp_id) && emp.emp_password.equals(emp_password))
+            {
+                return employees.get(emp_id);
+            }
+        }
+        return null;
+    }
 }

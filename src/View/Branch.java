@@ -1,5 +1,6 @@
 package View;
 import Model.Address;
+import Model.Employee;
 
 import java.util.*;
 
@@ -19,9 +20,15 @@ public class Branch
 
         while(true)
         {
-            System.out.println("1.create employees");
-            System.out.println("2.view employees");
-            System.out.println("");
+            System.out.println("0.Total fund available in branch: ");
+
+            System.out.println("1.Create employees.");
+
+            System.out.println("2.View employees.");
+
+            System.out.println("3.Manage employees.");
+
+            System.out.println("4.View employees credentials.");
 
             option=Integer.parseInt(sc.nextLine());
             if(option==1)
@@ -62,6 +69,35 @@ public class Branch
                     System.out.println("Loading...");
                     System.out.println("Employee is added succuessfully!");
                 }
+            }
+            else if(option==2)
+            {
+                System.out.println("----------------------------VIEW ALL EMPLOYEES----------------------------------------");
+                System.out.println();
+                LinkedHashMap<String, Employee> employees=branchController.view_employees();
+                System.out.println("     ID         NAME        RESIGNATION   ");
+                for(Map.Entry<String,Employee> e:employees.entrySet())
+                {
+                    System.out.println(e.getKey()+"       "+e.getValue().emp_name+"      "+e.getValue().emp_resignation);
+                }
+            }
+            else if(option==3)
+            {
+                System.out.println("-------------------------VIEW EMPLOYEE CREDENTIALS-----------------------------------");
+                System.out.println();
+                LinkedHashMap<String, Employee> employees=branchController.view_employees();
+                System.out.println("     ID          PASSWORD         NAME        RESIGNATION   ");
+                for(Map.Entry<String,Employee> e:employees.entrySet())
+                {
+                    System.out.println(e.getKey()+"       "+e.getValue().emp_password+"    "+e.getValue().emp_name+"      "+e.getValue().emp_resignation);
+                }
+            }
+            else if(option==0)
+            {
+                System.out.println("----------------------TOTAL FUND AVAILABLE IN BRANCH--------------------------------");
+                System.out.println(branch.branch_name+"             "+branch.ifce);
+                System.out.println();
+                System.out.println("Total fund availabe is--->"+branch.totalfund);
             }
         }
     }

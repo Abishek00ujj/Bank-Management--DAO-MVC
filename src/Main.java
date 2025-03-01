@@ -57,14 +57,14 @@ public class Main
                 {
                     branchView.branchManager_view(branchData,ifce,branch);
                 }
-                else {
+                else
+                {
                     System.out.println("Inavlid credentials");
                 }
             }
             else if(option==3)
             {
-                String emp_id;
-                String emp_password;
+
             }
         }
     }
