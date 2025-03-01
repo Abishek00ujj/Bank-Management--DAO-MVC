@@ -12,7 +12,8 @@ public class Bank
 
     LinkedHashMap<String,Branch> branches=new LinkedHashMap<>();
 
-    public void create_branch(String ifce, String branch_name, Address address, String contact, Employee branch_manager) {
+    public void create_branch(String ifce, String branch_name, Address address, String contact, Employee branch_manager)
+    {
         branches.put(ifce, new Model.Branch(ifce, branch_name, address, contact, branch_manager, 0));
     }
     public void update_branch_manager(String ifce,Branch branch)
@@ -73,7 +74,7 @@ public class Bank
         return null;
     }
 
-    public Branch get_branch(String ifce)
+    public Model.Branch get_branch(String ifce)
     {
         return branches.get(ifce);
     }

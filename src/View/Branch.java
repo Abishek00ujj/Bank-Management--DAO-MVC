@@ -30,6 +30,8 @@ public class Branch
 
             System.out.println("4.View employees credentials.");
 
+            System.out.println("5.EXIT");
+
             option=Integer.parseInt(sc.nextLine());
             if(option==1)
             {
@@ -63,11 +65,15 @@ public class Branch
                 String state=sc.nextLine();
 
 
-                if(emp_name.isEmpty() && emp_id.isEmpty() && emp_password.isEmpty() && emp_resgination.isEmpty() && state.isEmpty() && city.isEmpty() && doorno.isEmpty())
+                if(!emp_name.isEmpty() && !emp_id.isEmpty() && !emp_password.isEmpty() && !emp_resgination.isEmpty() && !state.isEmpty() && !city.isEmpty() && !doorno.isEmpty())
                 {
                     branchController.create_employee(branch.ifce,emp_id,emp_name,emp_password,emp_resgination,new Address(city,doorno,district,state),contact);
                     System.out.println("Loading...");
                     System.out.println("Employee is added succuessfully!");
+                }
+                else {
+                    System.out.println("Please fill all the fields..");
+                    System.out.println("try again later..");
                 }
             }
             else if(option==2)
@@ -81,12 +87,12 @@ public class Branch
                     System.out.println(e.getKey()+"       "+e.getValue().emp_name+"      "+e.getValue().emp_resignation);
                 }
             }
-            else if(option==3)
+            else if(option==4)
             {
                 System.out.println("-------------------------VIEW EMPLOYEE CREDENTIALS-----------------------------------");
                 System.out.println();
                 LinkedHashMap<String, Employee> employees=branchController.view_employees();
-                System.out.println("     ID          PASSWORD         NAME        RESIGNATION   ");
+                System.out.println("     ID         PASSWORD        NAME       RESIGNATION   ");
                 for(Map.Entry<String,Employee> e:employees.entrySet())
                 {
                     System.out.println(e.getKey()+"       "+e.getValue().emp_password+"    "+e.getValue().emp_name+"      "+e.getValue().emp_resignation);
@@ -98,6 +104,9 @@ public class Branch
                 System.out.println(branch.branch_name+"             "+branch.ifce);
                 System.out.println();
                 System.out.println("Total fund availabe is--->"+branch.totalfund);
+            }
+            else{
+                return;
             }
         }
     }

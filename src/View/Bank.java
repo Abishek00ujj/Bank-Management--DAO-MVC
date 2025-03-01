@@ -14,6 +14,8 @@ public class Bank
     public void bank_view(Controller.Bank bank)
     {
         Scanner sc=new Scanner(System.in);
+        System.out.println("------------------------------BANK ADMIN----------------------------------------");
+
         while(true) {
             System.out.println("1.create branch");
             System.out.println("2.Manage branch");
@@ -21,6 +23,7 @@ public class Bank
             System.out.println("4.View total funds");
             System.out.println("5.Assign funds to Branch");
             System.out.println("6.Credential details of Employees");
+            System.out.println("7.Exit");
             int option = Integer.parseInt(sc.nextLine());
             if(option==1)
             {
@@ -193,6 +196,9 @@ public class Bank
                 {
                     System.out.println(e.getKey()+"    "+e.getValue().branch_name+"    "+e.getValue().branch_manager.emp_name+"   "+e.getValue().branch_manager.emp_id+"    "+e.getValue().branch_manager.emp_password);
                 }
+            }
+            else {
+                return;
             }
         }
 

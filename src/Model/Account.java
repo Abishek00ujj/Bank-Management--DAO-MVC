@@ -1,21 +1,23 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class Account
 {
-    public String cust_id;
-    public String acc_number;
+    public long cust_id;
+    public long acc_number;
     public String acc_type;
-    public String acc_balance;
+    public long acc_balance;
 
-    public Transaction transaction;
+    public ArrayList<Transaction> transactions=new ArrayList<>();
 
-    public Account(String cust_id,String acc_number,String acc_type,String acc_balance,Transaction transaction)
+    public Account(long cust_id,long acc_number,String acc_type,long acc_balance,ArrayList<Transaction>transaction)
     {
         this.acc_number=acc_number;
         this.acc_type=acc_type;
         this.acc_balance=acc_balance;
         this.cust_id=cust_id;
-        this.transaction=transaction;
+        this.transactions=transaction;
     }
 
 }
